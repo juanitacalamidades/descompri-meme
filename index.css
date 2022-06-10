@@ -1,17 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic);
 
-html,
-body {
+html {
   width: 100%;
   height: 100%;
-}
-
-body {
   background: linear-gradient(10deg, rgba(244,235,160,1) 43%,rgba(238,156,137,1) 43%)/*#ee9ca7*/;
-  
 }
-
-
 #cake {
   display: block;
   position: relative;
@@ -102,29 +95,21 @@ body {
   }
 }
 h1 {
-    font-size: 1.4em;
-    color: #8b6a60;
+  font-size: 1.4em;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-style:italic;
   text-align: center;
 } 
-.text {
-  /*color: #8b6a60;
-  font-family: 'Lato', sans-serif;*/
-  font-weight: 300;
-  font-style:italic;
-  text-align: center;
-  
-}  
+
 
 /*SOBRE SVG */
 
 .wrapper { 
-  position: relative;
-  margin-top: 12em;
-  margin-left: 8em;
-  margin-bottom: 5em;
+ /* position: relative;
+  margin-top: 35%;
+  margin-left: 40%;
+  margin-bottom: 5em;*/
   width: 100px;
 
 }
@@ -183,8 +168,8 @@ h1 {
 	font-size: 10vw;
 	text-align: center;
 	line-height: 1;
-	margin: -20% 0 5% 0;
-	top: 80%;
+	margin: 0;
+	top: 60%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	position: absolute;
@@ -265,4 +250,11 @@ h1::after {
     bottom: 0;
     top: 90%;
     left: 2em;
+  }
+  .wrapper {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 70%;
+    right: 7em;
   }
