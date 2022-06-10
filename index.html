@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,22 @@
     <link rel="stylesheet" href="/index.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  
+
     <title>Zorionak Marta!</title>
 </head>
 
 <body>
 
- 
-        <div class="tarta">
-            <div class="velas">
-                <div class="fuego"></div>
-                <div class="fuego"></div>
-                <div class="fuego"></div>
-                <div class="fuego"></div>
-                <div class="fuego"></div>
-            </div>
-            <svg id="cake" version="1.1" x="0px" y="0px" width="200px" height="500px" viewBox="0 0 200 500" enable-background="new 0 0 200 500" xml:space="preserve">
+
+    <div class="tarta">
+        <div class="velas">
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+        </div>
+        <svg id="cake" version="1.1" x="0px" y="0px" width="200px" height="500px" viewBox="0 0 200 500" enable-background="new 0 0 200 500" xml:space="preserve">
                 <path fill="#a88679" d="M173.667-13.94c-49.298,0-102.782,0-147.334,0c-3.999,0-4-16.002,0-16.002
                     c44.697,0,96.586,0,147.334,0C177.667-29.942,177.668-13.94,173.667-13.94z">
                     <animate id="bizcocho_3" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1" begin="relleno_2.end" dur="0.3s" fill="freeze" values="
@@ -170,13 +171,13 @@
                 </path>
                 <rect x="10" y="475.571" fill="#fefae9" width="180" height="4" />
             </svg>
-            <h1 contenteditable data-heading="Zorionak Marta" class="text">Zorionak Marta</h1>   
-        </div>
-           
+        <h1 contenteditable data-heading="Zorionak Marta" class="text">Zorionak Marta</h1>
+    </div>
 
-    
-            <figure class="wrapper" id="boton" >
-                <svg class="icon"  x="10" y="10" viewBox="0 0 130 80" enable-background="new 0 0 130 80" preserveAspectRatio="xMinYMin meet" xml:space="preserve">
+
+
+    <figure class="wrapper" id="boton">
+        <svg class="icon" x="10" y="10" viewBox="0 0 130 80" enable-background="new 0 0 130 80" preserveAspectRatio="xMinYMin meet" xml:space="preserve">
                   <path fill="#fefae9" class="object envelop" d="M105.907,6c1.385,0,2.307,0.745,2.358,1.279l4.469,46.757c0.057,0.6-0.888,1.607-2.444,1.756l-68.488,6.546
                         c-0.125,0.012-0.251,0.018-0.375,0.018c-1.385,0-2.307-0.745-2.358-1.279L34.6,14.319c-0.032-0.336,0.23-0.668,0.389-0.837
                         c0.477-0.505,1.226-0.84,2.055-0.919l68.488-6.546C105.657,6.006,105.783,6,105.907,6 M105.907,0
@@ -188,18 +189,17 @@
                   <line fill="#fefae9" class="line speed" x1="6" y1="36.178" x2="24" y2="36.178"/>
                   <line fill="#fefae9" class="line speed" x1="8" y1="50.178" x2="24" y2="50.178"/>
                 </svg>
-              </figure>
+    </figure>
 
-        <audio id="audio" src="capsula.mp3" controls  style="visibility: hidden;"></audio>
+    <audio id="audio" src="capsula.mp3" controls style="visibility: hidden;"></audio>
 
-<script>
-    
-    let boton = document.getElementById("boton");
-    boton.addEventListener("click", () => {
-        let audio = document.getElementById("audio");
-        audio.style.visibility = "visible";
-    })
-
-</script>
+    <script>
+        let boton = document.getElementById("boton");
+        boton.addEventListener("click", () => {
+            let audio = document.getElementById("audio");
+            audio.style.visibility = "visible";
+        })
+    </script>
 </body>
+
 </html>
