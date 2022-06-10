@@ -1,0 +1,268 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic);
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(10deg, rgba(244,235,160,1) 43%,rgba(238,156,137,1) 43%)/*#ee9ca7*/;
+  
+}
+
+
+#cake {
+  display: block;
+  position: relative;
+  margin: -10em auto 0 auto;
+}
+
+/* ============================================== Candle
+*/
+
+.velas {
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 228px;
+  left: 50%;
+  margin-left: -2.4px;
+  margin-top: -8.33333333px;
+  width: 5px;
+  height: 35px;
+  transform: translateY(-300px);
+  backface-visibility: hidden;
+  animation: in 500ms 6s ease-out forwards;
+}
+.velas:after,
+.velas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.22222222px;
+}
+.velas:after {
+  top: 25%;
+  left: 0;
+}
+.velas:before {
+  top: 45%;
+  left: 0;
+}
+
+/* ============================================== Fire
+*/
+
+.fuego {
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -2.6px;
+  width: 6.66666667px;
+  height: 18px;
+}
+.fuego:nth-child(1) {
+  animation: fuego 2s 6.5s infinite;
+}
+.fuego:nth-child(2) {
+  animation: fuego 1.5s 6.5s infinite;
+}
+.fuego:nth-child(3) {
+  animation: fuego 1s 6.5s infinite;
+}
+.fuego:nth-child(4) {
+  animation: fuego 0.5s 6.5s infinite;
+}
+.fuego:nth-child(5) {
+  animation: fuego 0.2s 6.5s infinite;
+}
+
+/* ============================================== Animation Fire
+*/
+
+@keyframes fuego {
+  0%, 100% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    transform: translateY(-20px) scale(0);
+  }
+}
+
+@keyframes in {
+  to {
+    transform: translateY(0);
+  }
+}
+h1 {
+    font-size: 1.4em;
+    color: #8b6a60;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style:italic;
+  text-align: center;
+} 
+.text {
+  /*color: #8b6a60;
+  font-family: 'Lato', sans-serif;*/
+  font-weight: 300;
+  font-style:italic;
+  text-align: center;
+  
+}  
+
+/*SOBRE SVG */
+
+.wrapper { 
+  position: relative;
+  margin-top: 12em;
+  margin-left: 8em;
+  margin-bottom: 5em;
+  width: 100px;
+
+}
+.icon {position: absolute;
+}
+.object {
+  fill: #9A275A;
+}
+.line {
+  fill: none;
+  stroke: #9A275A;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 5;
+}
+.envelop {
+  animation: flying 1s ease-in-out alternate infinite;
+}
+.speed {
+  animation: wind 1s ease-in-out alternate infinite;
+}
+        
+@keyframes flying {
+  0%
+    {transform: rotate(0deg) translateY(0px)}
+  100%
+    {transform: rotate(5deg) translateY(5px)}
+}
+
+@keyframes wind {
+  0%
+   { transform: translateY(0px) scaleX(1);
+    left: 0
+  }
+  100%
+    {transform: translateY(10px) scaleX(.9);
+  }
+}
+
+/* MENSAJE */
+:root {
+  --red: #f98ca4;
+  --blue: #4ad9db;
+  --green: #65f283;
+  --orange: #f5b10b;
+  --darkblue: #2f3e9c;
+  --darkred: #9e132c;
+  --purple: #6e1f58;
+  --outline: 2px;
+}
+
+h1 {	
+	font-family: 'CoreCircus', sans-serif;
+	text-transform: uppercase;
+	font-size: 10vw;
+	text-align: center;
+	line-height: 1;
+	margin: -20% 0 5% 0;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	color: var(--red);
+	text-shadow: 
+			-1px -1px 0 var(--purple), 1px -1px 0 var(--purple), -1px 1px 0 var(--purple), 1px 1px 0 var(--purple), 
+			1px 0px 0px var(--green), 0px 1px 0px var(--green), 2px 1px 0px var(--green), 1px 2px 0px var(--green), 3px 2px 0px var(--green), 2px 3px 0px var(--green), 4px 3px 0px var(--green), 3px 4px 0px var(--green), 5px 4px 0px var(--green),
+			3px 5px 0px var(--purple), 6px 5px 0px var(--purple), 
+			-1px 2px 0 black, 0 3px 0 var(--purple), 1px 4px 0 var(--purple), 2px 5px 0px var(--purple),
+			2px -1px 0 var(--purple), 3px 0 0 var(--purple), 4px 1px 0 var(--purple), 5px 2px 0px var(--purple), 6px 3px 0 var(--purple), 7px 4px 0 var(--purple),
+		10px 10px 4px #dac249;
+
+}
+	
+h1:after,
+h1::before {
+  content: attr(data-heading);
+  position: absolute;
+  overflow: hidden;
+  left: 0;		
+  width: 100%;
+  top: 0;
+  z-index: 5;
+}
+
+h1::before {
+  
+  text-shadow: 
+    -1px -1px 0 var(--darkred), 1px -1px 0 var(--darkred), -1px 1px 0 var(--darkred), 1px 1px 0 var(--darkred), 
+    1px 0px 0px var(--orange), 0px 1px 0px var(--orange), 2px 1px 0px var(--orange), 1px 2px 0px var(--orange), 3px 2px 0px var(--orange), 2px 3px 0px var(--orange), 4px 3px 0px var(--orange), 3px 4px 0px var(--orange), 5px 4px 0px var(--orange),
+    3px 5px 0px var(--darkred), 6px 5px 0px var(--darkred), 
+    -1px 2px 0 black, 0 3px 0 var(--darkred), 1px 4px 0 var(--darkred), 2px 5px 0px var(--darkred),
+    2px -1px 0 var(--darkred), 3px 0 0 var(--darkblue), 4px 1px 0 var(--darkred), 5px 2px 0px var(--darkred), 6px 3px 0 var(--darkred), 7px 4px 0 var(--darkred),
+    10px 10px 4px rgba(#6af177, .8);
+  color: var(--green);
+  height: 66%;
+}
+
+h1::after {
+  height: 33%;
+  color: var(--blue);
+  text-shadow: 
+    -1px -1px 0 var(--darkblue), 1px -1px 0 var(--darkblue), -1px 1px 0 var(--darkblue), 1px 1px 0 var(--darkblue), 
+    1px 0px 0px var(--red), 0px 1px 0px var(--red), 2px 1px 0px var(--red), 1px 2px 0px var(--red), 3px 2px 0px var(--red), 2px 3px 0px var(--red), 4px 3px 0px var(--red), 3px 4px 0px var(--red), 5px 4px 0px var(--red),
+    3px 5px 0px var(--darkblue), 6px 5px 0px var(--darkblue), 
+    -1px 2px 0 black, 0 3px 0 var(--darkblue), 1px 4px 0 var(--darkblue), 2px 5px 0px var(--darkblue),
+    2px -1px 0 var(--darkblue), 3px 0 0 var(--darkblue), 4px 1px 0 var(--darkblue), 5px 2px 0px var(--darkblue), 6px 3px 0 var(--darkblue), 7px 4px 0 var(--darkblue);
+}
+/*
+ * Webfont: CoreCircus by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/regular/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*
+ * Webfont: CoreCircus2DDot1 by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/dot1/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*/
+
+@font-face {
+	font-family: 'CoreCircus2DDot1';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot');
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CoreCircus';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');}
+
+	
+	@font-face {font-family: 'CoreCircusPierrot4';src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot');src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot?#iefix') format('embedded-opentype'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff2') format('woff2'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff') format('woff'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.ttf') format('truetype');}
+
+  audio {
+    display:block;
+    position: absolute;
+    bottom: 0;
+    top: 90%;
+    left: 2em;
+  }
